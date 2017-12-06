@@ -3,7 +3,8 @@
 }
 
 body {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
   background-color: #ccc;
   margin: 0;
   height: 100vh;
@@ -13,14 +14,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 /*Seccion 1.*/
 .game{
   border-right: 1px solid #000;
   text-align: center;
-  width: 80%;
   padding: 0 20px;
 }
 
@@ -61,6 +60,17 @@ input {
 /*Seccion 2.*/
 
 .history {
-  width: 20%;
   margin: 0 20px;
+}
+
+@media all and (max-width:900px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .game{
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+
 }
