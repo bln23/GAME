@@ -38,12 +38,24 @@ body {
 .guess-number {
   display: flex;
   flex-direction: column;
+  width: 35%;
+  align-self: center;
+  margin: 12px auto;
+}
+
+.guess-number > * {
+  margin: 6px 0;
 }
 
 .track {
   border: 1px solid blue;
   color: blue;
   padding: 23px 0;
+  margin-top: 50px;
+}
+
+input {
+  padding: 5px 0;
 }
 
 /*Seccion 2.*/
