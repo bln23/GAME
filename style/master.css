@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #ccc;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+/*Seccion 1.*/
+.game{
+  border-right: 1px solid #000;
+  text-align: center;
+  width: 80%;
+  padding: 0 20px;
+}
+
+.attempts{
+  font-size: 60px;
+  color: red;
+  text-align: right;
+}
+
+.title {
+  flex: 1;
+  justify-content: center;
+}
+
+.guess-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.track {
+  border: 1px solid blue;
+  color: blue;
+  padding: 23px 0;
+}
+
+/*Seccion 2.*/
+
+.history {
+  width: 20%;
+  margin: 0 20px;
+}
