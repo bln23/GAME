@@ -57,6 +57,10 @@ input {
   padding: 5px 0;
 }
 
+.insert-name.hidden {
+  display: none;
+}
+
 /*Seccion 2.*/
 
 .history {
