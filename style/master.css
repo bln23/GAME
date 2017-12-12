@@ -7,13 +7,13 @@ body {
   grid-template-columns: 4fr 1fr;
   margin: 0;
   height: 100vh;
-  background-image: '../image-background/backgroundimage.jpg';
+  background-image: url(../image-background/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  font-family: 'Amatic SC', bold;
+  font-size: 30px;
+  color: white;
 }
 
-.background {
-  width: 100%;
-  display: block;
-}
 
 .header {
   display: flex;
@@ -29,7 +29,7 @@ body {
 }
 
 .attempts{
-  font-size: 60px;
+  font-size: 80px;
   color: red;
   text-align: right;
 }
@@ -52,14 +52,22 @@ body {
 }
 
 .track {
-  border: 1px solid blue;
-  color: blue;
+  border: 1px solid black;
+  color: black;
   padding: 23px 0;
   margin-top: 50px;
 }
 
 input {
   padding: 5px 0;
+}
+
+.button-style {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', bold;
 }
 
 .insert-name.hidden {
@@ -75,11 +83,16 @@ input {
 @media all and (max-width:900px) {
   body {
     grid-template-columns: 1fr;
+    font-size: 20px;
   }
 
   .game{
     border-right: none;
     border-bottom: 1px solid #000;
+  }
+
+  .attempts{
+    font-size: 60px;
   }
 
 }
