@@ -24,35 +24,17 @@ saveNumberButton.addEventListener('click', function() {
   }
 });
 
-// var saveNameButton = document.querySelector('#save-name');
-// saveNameButton.addEventListener('click', function() {
-//   document.querySelector('.insert-name').classList.add('hidden');
-//   track.textContent = 'PRUEBA DE NUEVO';
-//   var inputName = document.querySelector('.user-name');
-//   registerPlayer(inputName.value, attempts);
-//   attempts = 0;
-//   attemptsView.textContent = 0;
-//   inputNumber.value = '';
-//   inputName.value = '';
-//   number = generateRandomNumber();
-// });
-//
-// function registerPlayer(name, attempts) {
-//   var history = document.querySelector('.history ul');
-//   var item = document.createElement('li');
-//   if (attempts === 1) {
-//     item.textContent = name + ' - ' + attempts + ' intento';
-//   } else {
-//     item.textContent = name + ' - ' + attempts + ' intentos';
-//   }
-//   history.appendChild(item);
-// }
-
 var saveNameButton = document.querySelector('#save-name');
 saveNameButton.addEventListener('click', function() {
-    document.querySelector('.insert-name').classList.add('hidden');
+  document.querySelector('.insert-name').classList.add('hidden');
+  track.textContent = 'PRUEBA DE NUEVO';
   var inputName = document.querySelector('.user-name');
   registerPlayer({name: inputName.value, attempts: attempts});
+  attempts = 0;
+  attemptsView.textContent = 0;
+  inputNumber.value = '';
+  inputName.value = '';
+  number = generateRandomNumber();
 });
 
 function registerPlayer(player) {
