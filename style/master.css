@@ -5,9 +5,14 @@
 body {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  background-color: #ccc;
   margin: 0;
   height: 100vh;
+  background-image: '../image-background/backgroundimage.jpg';
+}
+
+.background {
+  width: 100%;
+  display: block;
 }
 
 .header {
