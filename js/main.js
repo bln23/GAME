@@ -4,7 +4,7 @@ function generateRandomNumber() {
   return Math.ceil(Math.random() * 100);
 }
 
-var number = generateRandomNumber();
+ var number = generateRandomNumber();
 
 var attempts = 0;
 var inputNumber = document.querySelector('.user-number');
